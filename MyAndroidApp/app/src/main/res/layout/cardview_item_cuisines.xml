@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardCuisine"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="02dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="2dp"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    android:focusable="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="start">
+
+        <ImageView
+            android:id="@+id/Foodtype_ImageId"
+            android:layout_width="400dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/Cuisines_name"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:singleLine="false"
+            android:text="Name"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

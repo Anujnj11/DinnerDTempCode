@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.anuj_nj.mytestapp.APIActivity"
+    android:padding="8dp">
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:id="@+id/loaderIdLL">-->
+    <!--<ProgressBar-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:indeterminate="true"-->
+    <!--android:id="@+id/loaderId"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:theme="@style/ProgressBar"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/Client_Location"
+        android:textSize="15sp" />
+
+    <include layout="@layout/loader_spinner"
+        android:id="@+id/loaderIdLL"/>
+
+    <include layout="@layout/location_required_view"
+        android:id="@+id/locationNotAvailable"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView_Cuisine_Restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

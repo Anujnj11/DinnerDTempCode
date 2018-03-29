@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anuj_nj.mytestapp.HomeActivity"
+    android:background="#fcfcfc">
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+<android.support.design.widget.CollapsingToolbarLayout
+    android:id="@+id/colspaccing"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:layout_scrollFlags="exitUntilCollapsed|scroll"
+    app:contentScrim="?attr/colorPrimary"
+    app:expandedTitleMarginStart="48dp"
+    app:expandedTitleMarginEnd="64dp"
+    app:title="Welcome"
+    android:background="@drawable/this_one">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarid"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="pin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+</android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.anuj_nj.mytestapp.HomeActivity"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/backgroundcolor"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:gravity="center">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ByLocation"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal"
+                        android:gravity="left">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="72dp"
+                            android:layout_margin="15dp"
+                            android:layout_gravity="left"
+                            android:src="@mipmap/food"
+                            />
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_width="180dp"
+                            android:layout_height="75dp"
+                            android:orientation="vertical"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:gravity="left"
+                                android:text="Location"
+                                />
+                            <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="@color/lightgreyline"-->
+                            <!--android:layout_margin="10dp"/>-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="left"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:layout_marginTop="5dp"
+                                android:text="Search cuisine by location preference"
+                                android:textColor="@android:color/darker_gray"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="26dp"
+                            android:layout_margin="25dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/rightarrow"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/RandomCuisine"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal"
+                        android:gravity="left">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="72dp"
+                            android:layout_margin="15dp"
+                            android:layout_gravity="left"
+                            android:src="@mipmap/flowchart"
+                            />
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_width="180dp"
+                            android:layout_height="75dp"
+                            android:orientation="vertical"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:gravity="left"
+                                android:text="Random"
+                                />
+                            <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="@color/lightgreyline"-->
+                            <!--android:layout_margin="10dp"/>-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="left"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:layout_marginTop="5dp"
+                                android:text="Search cuisine by random guess"
+                                android:textColor="@android:color/darker_gray"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="26dp"
+                            android:layout_margin="25dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/rightarrow"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/RandomCuisine"-->
+                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:layout_width="150dp"-->
+                    <!--android:layout_height="190dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:paddingRight="10dp">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation= "vertical"-->
+                        <!--android:gravity="center">-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:background="@drawable/circlebackgroundpink"-->
+                            <!--android:src="@drawable/ic_lightbulb_outline_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:text="Random"-->
+                            <!--android:layout_margin="10dp"/>-->
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="@color/lightgreyline"-->
+                            <!--android:layout_margin="10dp"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Search cuisine by random guess"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="190dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:paddingLeft="10dp">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation= "vertical"-->
+            <!--android:gravity="center">-->
+            <!--<ImageView-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="64dp"-->
+            <!--android:background="@drawable/circlebackgroundpurple"-->
+            <!--android:src="@drawable/ic_location_searching_black_24dp"-->
+            <!--android:padding="10dp"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="Location"-->
+            <!--android:layout_margin="10dp"/>-->
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/lightgreyline"-->
+            <!--android:layout_margin="10dp"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Search cuisine by location preference"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="190dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:paddingRight="10dp">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation= "vertical"-->
+            <!--android:gravity="center">-->
+            <!--<ImageView-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="64dp"-->
+            <!--android:background="@drawable/circlebackgroundpink"-->
+            <!--android:src="@drawable/ic_lightbulb_outline_black_24dp"-->
+            <!--android:padding="10dp"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="Random"-->
+            <!--android:layout_margin="10dp"/>-->
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/lightgreyline"-->
+            <!--android:layout_margin="10dp"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Search cuisine by random guess"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="@android:color/darker_gray"/>-->
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dinner Decider</string>
+    <string name="Email">Enter EmailId</string>
+    <string name="Password">Enter Password</string>
+    <string name="Phone">Enter Number</string>
+    <string name="LocationEnabledMsg">Dinner decider uses your location to find resturante near you.kindly enable location</string>
+</resources>
