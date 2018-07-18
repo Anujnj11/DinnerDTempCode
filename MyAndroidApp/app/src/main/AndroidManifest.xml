@@ -16,7 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar">
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +30,8 @@
         <!-- <activity android:name=".HomeActivity"></activity> -->
         <activity android:name=".LocationBasedActivity" />
         <activity android:name=".Resturante_By_Id" />
-        <activity android:name=".LocationBasedCuisine"></activity>
+        <activity android:name=".LocationBasedCuisine" />
+        <activity android:name=".RandomActivity"></activity>
     </application>
 
 </manifest>

@@ -15,9 +15,9 @@ public class HomeActivity extends AppCompatActivity implements  View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         LocationCard = (CardView) findViewById(R.id.ByLocation);
-//        RandomCard = (CardView) findViewById(R.id.RandomCuisine);
+        RandomCard = (CardView) findViewById(R.id.RandomCuisine);
         LocationCard.setOnClickListener(this);
-//        RandomCard.setOnClickListener(this);
+        RandomCard.setOnClickListener(this);
 
     }
 
@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity implements  View.OnClickList
     switch (v.getId()){
 //        case R.id.ByLocation : i = new Intent(this,LocationBasedActivity.class); startActivity(i); break;
         case R.id.ByLocation : i = new Intent(this,LocationBasedCuisine.class); startActivity(i); break;
-//        case R.id.RandomCuisine : i = new Intent(this,LocationBasedCuisine.class); startActivity(i); break;
+        case R.id.RandomCuisine : i = new Intent(this,RandomActivity.class); startActivity(i); break;
         default:break;
     }
     }
